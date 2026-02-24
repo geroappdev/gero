@@ -20,21 +20,6 @@ At this moment, **no application source code is published in this repository**.
 <br /><br />
 
 
-## 🚧 Open Source Status
-
-The project is **not open source yet**.
-
-Before opening the codebase, the following needs to be completed:
-- 🔧 Refactoring internal components  
-- 🧪 Establishing solid unit test coverage  
-- 📐 Defining contribution guidelines  
-
-Since future contributions will require **mandatory unit tests**, the codebase must first meet the same standard.
-
-
-<br /><br />
-
-
 ## 📄 License
 
 Copyright © [2026] [geroappdev]
