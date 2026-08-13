@@ -24,9 +24,5 @@ At this moment, **no application source code is published in this repository**.
 
 Copyright © [2026] [geroappdev]
 
-This project is currently **free to use**, but **not open source**.
-
 All rights are reserved by the author.  
 You may not copy, modify, redistribute, or sublicense this software without explicit permission.
-
-Future licensing options (including open source or commercial licenses) may be considered.
