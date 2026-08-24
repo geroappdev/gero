@@ -1,0 +1,2274 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Gero App Dev">
+      
+      
+        <link rel="canonical" href="https://geroappdev.github.io/Gero/">
+      
+      
+      
+        <link rel="next" href="getting-started/overview/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Gero - Gero</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Gero" class="md-header__button md-logo" aria-label="Gero" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gero
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Gero
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="getting-started/overview/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="concepts/videos/" class="md-tabs__link">
+          
+  
+  
+  Concepts
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="support/faq/" class="md-tabs__link">
+          
+  
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="license/" class="md-tabs__link">
+          
+  
+  
+  Legal
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Gero" class="md-nav__button md-logo" aria-label="Gero" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    Gero
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started/android-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android app
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started/browser-extension/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browser extension
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Concepts
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/videos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Videos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/media-subscriptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Media subscriptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/game-bundles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Game bundles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/arcade-quiztime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arcade: QuizTime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/arcade-follow-the-beat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arcade: Follow the Beat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/arcade-caption-creator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arcade: Caption Creator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/arcade-dare-deck/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arcade: Dare deck
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/arcade-to-cum-or-not-to-cum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arcade: To cum or not to cum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/arcade-obey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arcade: Obey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/arcade-toy-tester/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arcade: Toy tester
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/gameplay-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gameplay recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concepts/panic-mode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Panic mode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="support/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="support/bug-reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="support/feature-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="support/patreon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Patreon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+  <h1>Home</h1>
+
+<!-- Font Awesome -->
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /></p>
+<style>
+  /* Import fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Pacifico&display=swap');
+
+  /* Reset defaults */
+  .md-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .md-content__inner {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide auto-generated page title */
+  .md-content__inner > h1:first-child,
+  .md-typeset h1:first-child {
+    display: none !important;
+  }
+
+  .md-main__inner {
+    margin: 0 !important;
+  }
+
+  .md-main__inner.md-grid {
+    max-width: unset !important;
+  }
+
+  .md-header,
+  .md-tabs {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .md-header.md-header--shadow {
+    background: #0a0a1a !important;
+    z-index: 100;
+  }
+
+  /* Base */
+  body {
+    background: #0a0a1a;
+  }
+
+  /* Font families */
+  .font-logo {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  .font-slogan {
+    font-family: 'Pacifico', cursive;
+  }
+
+  /* Animations */
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(247, 37, 133, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(247, 37, 133, 0.6); }
+  }
+
+  /* HERO SECTION */
+  .hero-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem;
+    overflow: hidden;
+    background: #0a0a1a;
+  }
+
+  .hero-orbs {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  .orb-1 {
+    top: -160px;
+    left: -160px;
+    width: 320px;
+    height: 320px;
+    background: rgba(247, 37, 133, 0.3);
+  }
+
+  .orb-2 {
+    top: 25%;
+    right: -80px;
+    width: 288px;
+    height: 288px;
+    background: rgba(245, 158, 11, 0.2);
+    animation-delay: 1s;
+  }
+
+  .orb-3 {
+    bottom: 160px;
+    left: 25%;
+    width: 384px;
+    height: 384px;
+    background: rgba(247, 37, 133, 0.15);
+    animation-delay: 2s;
+  }
+
+  .grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(247, 37, 133, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(247, 37, 133, 0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: rgba(247, 37, 133, 0.1);
+    border: 1px solid rgba(247, 37, 133, 0.3);
+    border-radius: 999px;
+    color: #f75da8 !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  .hero-title {
+    font-size: 6rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 0.5rem !important;
+    background: linear-gradient(to right, #f72585, #f59e0b) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    line-height: 1 !important;
+    font-family: 'Poppins', system-ui, sans-serif !important;
+  }
+
+  .hero-tagline {
+    font-size: 2rem !important;
+    color: rgb(100, 116, 139) !important;
+    font-family: 'Pacifico', cursive !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cta {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(to right, #f72585, #f59e0b);
+    color: white !important;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(247, 37, 133, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .btn-cta:hover {
+    box-shadow: 0 10px 15px -3px rgba(247, 37, 133, 0.5);
+    transform: translateY(-2px) scale(1.03);
+    color: white !important;
+  }
+
+  .btn-cta:active {
+    transform: translateY(0) scale(0.97);
+  }
+
+  .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(247, 37, 133, 0.3);
+    transform: translateY(-2px);
+    color: white !important;
+  }
+
+  /* CONTENT SECTIONS */
+  .content-section {
+    padding: 6rem 2rem;
+    position: relative;
+  }
+
+  .content-section-dark {
+    background: #0a0a1a !important;
+  }
+
+  .content-section-light {
+    background: #141428 !important;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 2.5rem !important;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0 !important;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #a1a1c9;
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Privacy Cards */
+  .privacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .privacy-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(247, 37, 133, 0.15);
+    background: rgba(20, 20, 40, 0.6);
+    text-align: center;
+  }
+
+  .privacy-card i {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .privacy-card h4 {
+    color: white !important;
+    font-size: 1rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .privacy-card p {
+    color: #a1a1c9 !important;
+    font-size: 0.875rem !important;
+    margin: 0 !important;
+  }
+
+  /* Pricing highlight */
+  .pricing-box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(247, 37, 133, 0.3);
+    background: linear-gradient(135deg, rgba(247, 37, 133, 0.08) 0%, rgba(245, 158, 11, 0.05) 100%);
+    text-align: center;
+  }
+
+  .pricing-box h3 {
+    color: white !important;
+    font-size: 1.5rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .pricing-box p {
+    color: #a1a1c9 !important;
+    line-height: 1.7 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .pricing-highlight {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: rgba(247, 37, 133, 0.15);
+    border: 1px solid rgba(247, 37, 133, 0.3);
+    border-radius: 0.75rem;
+    color: #f75da8 !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Quick links grid */
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .link-card {
+    display: block;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(247, 37, 133, 0.1);
+    background: linear-gradient(135deg, rgba(20, 20, 40, 0.8) 0%, rgba(30, 30, 58, 0.6) 100%);
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #f72585, #f59e0b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .link-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(247, 37, 133, 0.3);
+    box-shadow: 0 12px 24px rgba(247, 37, 133, 0.15);
+  }
+
+  .link-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .link-card i {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    display: block;
+    color: #f72585;
+  }
+
+  .link-card h4 {
+    color: white !important;
+    font-size: 1.1rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .link-card p {
+    color: #a1a1c9 !important;
+    font-size: 0.875rem !important;
+    margin: 0 !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Roadmap */
+  .roadmap-grid {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .roadmap-item {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(247, 37, 133, 0.15);
+    background: rgba(20, 20, 40, 0.6);
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+
+  .roadmap-item i {
+    font-size: 1.5rem;
+    color: #f72585;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+
+  .roadmap-item h4 {
+    color: white !important;
+    font-size: 1.1rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .roadmap-item p {
+    color: #a1a1c9 !important;
+    font-size: 0.875rem !important;
+    margin: 0 !important;
+  }
+
+  .roadmap-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 0.5rem;
+    color: #f59e0b !important;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .roadmap-badge-done {
+    background: rgba(16, 185, 129, 0.15);
+    border-color: rgba(16, 185, 129, 0.3);
+    color: #10b981 !important;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    position: relative;
+    padding: 6rem 2rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .cta-section .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-title {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 1rem !important;
+    color: white !important;
+  }
+
+  .cta-description {
+    font-size: 1.125rem !important;
+    margin-bottom: 2.5rem !important;
+    color: #a1a1c9 !important;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 3.5rem !important;
+    }
+
+    .hero-tagline {
+      font-size: 1.25rem !important;
+    }
+
+    .section-title {
+      font-size: 2rem !important;
+    }
+
+    .cta-title {
+      font-size: 2rem !important;
+    }
+  }
+</style>
+
+<!-- HERO SECTION -->
+<div class="hero-container">
+  <div class="hero-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-pattern"></div>
+  </div>
+
+  <div class="hero-content">
+    <span class="hero-badge">Private &middot; No tracking &middot; Yours forever</span>
+    <div style="margin-bottom: 1rem;">
+      <img src="assets/logo.png" alt="Gero" style="max-width: 320px; height: auto; filter: drop-shadow(0 0 30px rgba(247, 37, 133, 0.4));" />
+    </div>
+    <p class="hero-tagline">Generating your pleasure</p>
+    <p class="hero-subtitle">
+      A personal video content management platform.<br>
+      Download, organize and tag your collection — then let the <strong style="color: rgba(255,255,255,0.9);">Arcade</strong><br>
+      turn it into games built from your own library.
+    </p>
+    <div class="hero-buttons">
+      <a href="getting-started/installation/" class="btn btn-cta">
+        <i class="fa-solid fa-download"></i> Get started
+      </a>
+      <a href="concepts/videos/" class="btn btn-secondary">
+        <i class="fa-solid fa-book-open"></i> Explore concepts
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- YOUR DATA, YOUR RULES -->
+<div class="content-section content-section-light">
+  <div class="container">
+    <h2 class="section-title"><i class="fa-solid fa-shield-halved" style="color: #f72585; margin-right: 0.5rem;"></i> Your data, your rules</h2>
+    <p class="section-subtitle">
+      Gero runs entirely on your own Windows PC. Your library, your metadata and your settings never leave it — no tracking, no analytics, no third parties.
+    </p>
+
+    <div class="privacy-grid">
+      <div class="privacy-card">
+        <i class="fa-solid fa-laptop" style="color: #f72585;"></i>
+        <h4>Runs on your machine</h4>
+        <p>Install it on your own Windows PC. Your videos, tags and settings stay there.</p>
+      </div>
+      <div class="privacy-card">
+        <i class="fa-solid fa-eye-slash" style="color: #f59e0b;"></i>
+        <h4>Zero tracking</h4>
+        <p>No analytics, no telemetry, no cookies. Your viewing habits are yours alone.</p>
+      </div>
+      <div class="privacy-card">
+        <i class="fa-solid fa-hard-drive" style="color: #f72585;"></i>
+        <h4>Local storage</h4>
+        <p>All videos, metadata, and settings stay on your own infrastructure.</p>
+      </div>
+      <div class="privacy-card">
+        <i class="fa-solid fa-lock" style="color: #f59e0b;"></i>
+        <h4>Built-in auth</h4>
+        <p>Password-protected access with secure session management.</p>
+      </div>
+    </div>
+
+    <p style="text-align: center; font-size: 0.95rem; color: #a1a1c9; max-width: 720px; margin: 2.5rem auto 0;">
+      There is one exception, and we'd rather name it than hide it: if you press <strong style="color: rgba(255,255,255,0.9);">Check for updates</strong>,
+      Gero asks the supporter downloads server whether a newer version exists. It sends only your update key, nothing about you or your library,
+      and it never happens on its own. <a href="privacy/" style="color: #f75da8;">Read the privacy policy</a>.
+    </p>
+  </div>
+</div>
+
+<!-- HOW IT WORKS / PRICING -->
+<div class="content-section content-section-dark">
+  <div class="container">
+    <h2 class="section-title">How to get Gero</h2>
+    <p class="section-subtitle">
+      Simple and fair. Pay once, use forever.
+    </p>
+
+    <div class="pricing-box">
+      <h3><i class="fa-brands fa-patreon" style="color: #f72585; margin-right: 0.5rem;"></i> Subscribe on Patreon</h3>
+      <p>
+        Subscribe to our <a href="https://patreon.com/geroappdev" style="color: #f75da8;">Patreon</a>, then log in with Patreon at the
+        <a href="https://gero-downloads.geroappdev.workers.dev" style="color: #f75da8;">supporter downloads page</a>.
+        Every release is there as one version folder holding the <strong style="color: white;">Windows build</strong>,
+        the <strong style="color: white;">Android app</strong> and the <strong style="color: white;">browser extensions</strong> —
+        older versions included, plus the gameplay recordings your tier unlocks.
+      </p>
+      <p>
+        Once you download and install Gero, <strong style="color: white;">the app is yours to keep forever</strong>.
+        Even if you cancel your subscription the next month, everything keeps working.
+      </p>
+      <p>
+        The only thing you miss without an active subscription are <strong style="color: white;">new features and updates</strong>.
+        Want the latest and greatest? Keep your subscription active and download updates whenever they're available.
+      </p>
+      <span class="pricing-highlight">
+        <i class="fa-solid fa-infinity"></i> &nbsp;One-time download &middot; Lifetime use
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK LINKS -->
+<div class="content-section content-section-light">
+  <div class="container">
+    <h2 class="section-title">Get started</h2>
+    <p class="section-subtitle">
+      Everything you need to install, configure, and understand Gero.
+    </p>
+
+    <div class="links-grid">
+      <a href="https://gero-downloads.geroappdev.workers.dev" class="link-card">
+        <i class="fa-solid fa-satellite-dish"></i>
+        <h4>Supporter downloads</h4>
+        <p>Log in with Patreon for the app, every release, your update key, and the gameplays.</p>
+      </a>
+      <a href="getting-started/installation/" class="link-card">
+        <i class="fa-solid fa-download"></i>
+        <h4>Installation guide</h4>
+        <p>Step-by-step instructions for the Windows app, plus the three ways to update.</p>
+      </a>
+      <a href="getting-started/android-app/" class="link-card">
+        <i class="fa-brands fa-android"></i>
+        <h4>Android app</h4>
+        <p>Install the APK and point it at your own server.</p>
+      </a>
+      <a href="concepts/videos/" class="link-card">
+        <i class="fa-solid fa-film"></i>
+        <h4>Videos</h4>
+        <p>Import, process, and manage your video collection.</p>
+      </a>
+      <a href="concepts/tags/" class="link-card">
+        <i class="fa-solid fa-tags"></i>
+        <h4>Tags</h4>
+        <p>Automatic and manual tagging with groups and aliases.</p>
+      </a>
+      <a href="concepts/media-subscriptions/" class="link-card">
+        <i class="fa-solid fa-rss"></i>
+        <h4>Media subscriptions</h4>
+        <p>Auto-download from your favorite sources on a schedule.</p>
+      </a>
+      <a href="concepts/arcade-dare-deck/" class="link-card">
+        <i class="fa-solid fa-layer-group"></i>
+        <h4>Arcade: Dare deck</h4>
+        <p>Six hands-off modes over a compilation feed, on 2,000 written lines.</p>
+      </a>
+      <a href="concepts/arcade-to-cum-or-not-to-cum/" class="link-card">
+        <i class="fa-solid fa-ticket"></i>
+        <h4>Arcade: To cum or not to cum</h4>
+        <p>A night at the fair — earn tickets, spin the wheel, gamble on the ending.</p>
+      </a>
+      <a href="concepts/arcade-follow-the-beat/" class="link-card">
+        <i class="fa-solid fa-music"></i>
+        <h4>Arcade: Follow the Beat</h4>
+        <p>Auto-build a beat-synced video from your library, matched to the music.</p>
+      </a>
+      <a href="concepts/arcade-caption-creator/" class="link-card">
+        <i class="fa-solid fa-comment-dots"></i>
+        <h4>Arcade: Caption Creator</h4>
+        <p>Multi-clip stories with AI-written captions that match the visuals.</p>
+      </a>
+      <a href="concepts/arcade-quiztime/" class="link-card">
+        <i class="fa-solid fa-gamepad"></i>
+        <h4>Arcade: QuizTime</h4>
+        <p>Interactive quiz games powered by your media collection.</p>
+      </a>
+      <a href="support/bug-reports/" class="link-card">
+        <i class="fa-solid fa-bug"></i>
+        <h4>Report a bug</h4>
+        <p>Found something broken? Help us fix it.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ROADMAP -->
+<div class="content-section content-section-dark">
+  <div class="container">
+    <h2 class="section-title">Roadmap</h2>
+    <p class="section-subtitle">
+      What's done, what's coming next, and what's planned for the future.
+    </p>
+
+    <div class="roadmap-grid">
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Video library &amp; import <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Import from URLs or local files. Automatic optimization, thumbnails, and previews.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Smart tagging &amp; actors <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Auto-extract tags from sources. Organize with groups, aliases, and actor profiles.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Theater mode <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>TikTok/Reels-style player with swipe navigation, keyboard shortcuts, and mobile support.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Media subscriptions <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Scheduled auto-downloads from your favorite sources with filtering.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Fragments &amp; smart splitting <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Auto-split videos into short clips for quick browsing.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Local AI: motion &amp; descriptions <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Scan your whole library — measure each clip's motion tempo and describe its content with a local AI model (embeddings) — so games can match footage to what's happening.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Arcade: Follow the Beat <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Auto-fills a beat-synced video from your library — clips locked to the song's beat by their measured motion, matched to your chosen content.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Arcade: Caption Creator <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Build a multi-clip story and let a local AI write captions that match what's on screen.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Arcade: OnlyCams &amp; Flamr <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>OnlyCams — build a camming career; Flamr — swipe to rate and curate your library, Tinder-style.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Arcade: Dare deck <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Six hands-off modes — choose your fate, left or right, pick a number, count your yes, last one standing, your week — played as a compilation feed over 2,000 hand-written lines. No AI model needed.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Arcade: To cum or not to cum <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>A night at the fair. Earn tickets clip by clip, spend them on a spin of the mystery wheel, and gamble everything on how the night ends. Challenges pull real items from your product collection.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Arcade: Obey <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>A timed, narrated session built from story arcs — the orders come from the screen, your clips and toys follow them.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Android app <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>The full interface as a real Android app, pointed at your own server. Ships with every release, next to the Windows build.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+        <div>
+          <h4>Products &amp; the reviewer <span class="roadmap-badge roadmap-badge-done">Done</span></h4>
+          <p>Catalogue your toys, outfits and shoes so games can name and picture the real thing. The reviewer is mobile-first for working through a pile of them.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-spinner" style="color: #f59e0b;"></i>
+        <div>
+          <h4>Arcade: QuizTime <span class="roadmap-badge">Experimental</span></h4>
+          <p>Multiple-choice quiz over your library with video backgrounds. Playable now; AI question generation is an early proof-of-concept.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-spinner" style="color: #f59e0b;"></i>
+        <div>
+          <h4>Studio: record your gameplay <span class="roadmap-badge">In progress</span></h4>
+          <p>Turn a played session into a finished video — record any arcade game, top and tail it with intros and outros, and let it run on a schedule. Not part of the public release yet.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-clock" style="color: #6b6b99;"></i>
+        <div>
+          <h4>Arcade: Find the Clip <span class="roadmap-badge">Planned</span></h4>
+          <p>Search and identify specific moments from your video collection.</p>
+        </div>
+      </div>
+      <div class="roadmap-item">
+        <i class="fa-solid fa-clock" style="color: #6b6b99;"></i>
+        <div>
+          <h4>Arcade: Tell Me a Story <span class="roadmap-badge">Planned</span></h4>
+          <p>Narrative-driven experience built around your video library.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA SECTION -->
+<div class="cta-section">
+  <div class="hero-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-pattern"></div>
+  </div>
+  <div class="container">
+    <h2 class="cta-title">Ready to take control of your media?</h2>
+    <p class="cta-description">
+      Install Gero in minutes. Your data stays with you, forever.
+    </p>
+    <div class="cta-buttons">
+      <a href="getting-started/installation/" class="btn btn-cta">
+        <i class="fa-solid fa-download"></i> Install Gero
+      </a>
+      <a href="https://patreon.com/geroappdev" class="btn btn-secondary">
+        <i class="fa-brands fa-patreon"></i> Support on Patreon
+      </a>
+      <a href="support/bug-reports/" class="btn btn-secondary">
+        <i class="fa-solid fa-bug"></i> Report a bug
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="getting-started/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://patreon.com/geroappdev" target="_blank" rel="noopener" title="Support on Patreon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://gero-downloads.geroappdev.workers.dev" target="_blank" rel="noopener" title="Supporter downloads" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v210.7l-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7zM64 320c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64h-46.9l-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/geroappdev/Gero" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
